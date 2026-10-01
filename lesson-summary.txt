@@ -1,0 +1,22 @@
+HTML MULTIMEDIA
+
+I learnt how to add images, audio, and video to a web page with the <img>, <audio>, and <video> elements. Images use src and alt attributes. Audio and video can use controls so the user can play, pause, and change the volume.
+
+HTML audio and video play once by default. I should leave out the loop attribute when I do not want media to repeat. I also practised organising media in Images, Music, and Video folders and creating a blog page with text and multimedia.
+
+Assignment
+how can we control the video/music to not play after playing the video/music 
+Build a blog site containing Video, Audio, Images and Texts.
+How to stop video/audio from playing again after it ends
+
+By default, HTML5 <audio> & <video> do not repeat — they play once and stop. The only reason media loops is if you (or someone else) adds the loop attribute:
+
+html
+<audio src="music.mp3" controls loop></audio>   <!-- loops forever -->
+<audio src="music.mp3" controls></audio>        <!-- plays once, then stops -->
+
+So to make sure it doesn't play again after finishing:
+
+Don't add loop — that's the main one.
+Also avoid autoplay combined with loop — that combo is what makes media restart itself endlessly without the user asking.
+If you want extra control (like a "play once only, disable replay button"), that needs JavaScript — e.g. listening for the ended event and disabling the controls — but plain HTML on its own already gives you "play once" behaviour as the default. For a pure-HTML assignment, the answer is simply: leave out the loop attribute.
