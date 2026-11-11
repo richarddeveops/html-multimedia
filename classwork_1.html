@@ -4,38 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../lesson.css">
-    <title>Blog</title>
+    <link rel="stylesheet" href="../theme.css">
+    <title>Multimedia Classwork</title>
 </head>
 <body>
-
-    <h1>Welcome To My Blog</h1>
-    <p>This blog contains text, images, audio and video all on one page.</p>
-    <hr>
-
-    <dl>
-        <h2><dt>Blog Post: My process to Showyourwork in my school </dt></h2>
-        <dd> <p>I created so new social media account eg:</p>
-            <li>Reddit</li>
-            <li>Youtube channel, etc.</li>
-        </dd>
-    </dl>
-
-    <h3>Photo:</h3>
-    <img src="Images/photo_5866054251593798045_w.jpg" alt="A picture from my day" width="500px">
-    <p><i>Caption: Starting my 'showyourwork' Journey as a Software Engineering student @SQI college of ICT.</i></p>
-
-    <h3>Audio:</h3>
-    <p>Here is the song I had on:</p>
-    <audio src="Music/See_You_Again.mp3" controls>See you again</audio>
-
-    <h3>Video:</h3>
-    <p>And here is a short video clip from the same day:</p>
-    <video src="Video/2e7c1bc5-8538-4f64-b279-90fd45396b55.mp4" width="500px" controls>This are the Peacky Blinders</video>
-    <hr>
-    <h2>Another Post: Random Thoughts</h2>
-    <p>May god be with me.</p>
-    <hr>
-    <p>Thank you for reading my blog.</p>
-    <p>Goodluck!</p>
+    <header>
+        <p><a href="index.html">Back to HTML multimedia</a></p>
+        <h1>Multimedia Classwork</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Example blog post</h2>
+            <p>This sample page demonstrates how a blog can include text, an image, audio, and video.</p>
+            <figure>
+                <img src="Images/photo_5866054251593798045_w.jpg" alt="Photograph used for the multimedia class exercise" width="500">
+                <figcaption>Example image and caption.</figcaption>
+            </figure>
+            <section>
+                <h3>Audio example</h3>
+                <audio src="Music/See_You_Again.mp3" controls preload="metadata">
+                    Audio playback is not supported by this browser.
+                </audio>
+            </section>
+            <section>
+                <h3>Video example</h3>
+                <figure>
+                    <video src="Video/2e7c1bc5-8538-4f64-b279-90fd45396b55.mp4" width="500" controls preload="metadata">
+                        Video playback is not supported by this browser.
+                    </video>
+                    <figcaption>Local video used for the lesson.</figcaption>
+                </figure>
+            </section>
+        </article>
+    </main>
+    <script src="../theme.js" defer></script>
 </body>
 </html>
