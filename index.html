@@ -4,18 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../lesson.css">
+    <link rel="stylesheet" href="../theme.css">
     <title>Html Multimedia</title>
-</head>
+</head> 
 <body>
-    <p><a href="../index.html">All lessons</a></p>
-    <img src="Images/Drinking Fayrux.png" alt="A photograph used in the multimedia lesson" width="500">
-    <audio src="Music/See_You_Again.mp3" controls>Play my favorite music</audio>
-    
-    <video src="./Video/VID-20260501-WA0014.mp4" width="500px" controls>This is Video</video>
-    <p><a href="lesson-summary.txt">What I learned</a></p>
-    
-    <p> <a href="classwork_1.html">Our class work</a></p>
-    <p> <a href="Selfpractice.html">Decide to practice myself</a></p>
-    <p> <a href="Assignment_blog_post2.html">The assignment given to us</a></p>
+    <header>
+        <p><a href="../index.html">All lessons</a></p>
+        <h1>HTML Multimedia</h1>
+        <p>Practise adding images, audio, and video with useful descriptions and controls.</p>
+    </header>
+    <main>
+        <figure>
+            <img src="Images/Drinking Fayrux.png" alt="Example image for the HTML multimedia lesson" width="500">
+            <figcaption>An image with descriptive alternative text.</figcaption>
+        </figure>
+        <section>
+            <h2>Audio example</h2>
+            <audio src="Music/See_You_Again.mp3" controls preload="metadata">
+                Audio playback is not supported by this browser.
+            </audio>
+        </section>
+        <section>
+            <h2>Video example</h2>
+            <video src="Video/VID-20260501-WA0014.mp4" width="500" controls preload="metadata">
+                Video playback is not supported by this browser.
+            </video>
+        </section>
+        <nav aria-label="Multimedia lesson pages">
+            <p><a href="lesson-summary.txt">What I learned</a></p>
+            <p><a href="classwork_1.html">Our class work</a></p>
+            <p><a href="Selfpractice.html">Self practice</a></p>
+            <p><a href="Assignment_blog_post2.html">Blog assignment</a></p>
+        </nav>
+    </main>
+    <script src="../theme.js" defer></script>
 </body>
 </html>
